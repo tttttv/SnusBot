@@ -36,11 +36,20 @@ class Message():
 
     def send_message(self):
         if self.photo:
-            pass
+            file = {'photo': open(self.photo, 'rb')}
+            self.request['caption'] = self.request.pop('text')
+            self.request.pop('message_id')
+            if self.keyboard:
+                print(self.photo)
+                but = self.request.pop('reply_markup')
+                requests.post(URL + 'sendPhoto', data=self.request,  files=file)
+            else:
+                requests.post(URL + 'sendPhoto', data=self.request, files=file)
         else:
             requests.post(URL + 'sendMessage', json=self.request)
-            print('The message was sent:')
-            print(self.request)
+
+        print('The message was sent:')
+        print(self.request)
 
 
 class CityMessage(Message):
@@ -59,6 +68,10 @@ class WrongCommand(Message):
 
 
 class NewMessage(Message):
+    def __init__(self, *args, **kwargs):
+        super(NewMessage, self).__init__(*args, **kwargs)
+        requests.post(URL + 'deleteMessage', json={'chat_id': self.chat_id, "message_id": self.message_id})
+
     def gen_request(self, _):
         if self.keyboard:
             kb = Inline_keyboard(*self.keyboard)
@@ -68,8 +81,8 @@ class NewMessage(Message):
             return(text)
         else:
             text = {'chat_id': self.chat_id, 'message_id': self.message_id, 'text': self.text}
+            return(text)
 
-        text = {'chat_id': self.chat_id, 'text': 'Пример поста'}
 
 
 

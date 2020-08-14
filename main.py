@@ -23,7 +23,7 @@ def main():
             mid = req['callback_query']['message']['message_id']
             cid = req['callback_query']['message']['chat']['id']
             tex = req['callback_query']['data']
-            print('Recieved: \n', tex)
+            print('Recieved answer: \n', tex)
 
             answer = botAnswer.bot_answer(cid, mid, tex)
             answer.send_message()
@@ -31,7 +31,7 @@ def main():
         except KeyError: ### Новое сообщение
             cid = req['message']['chat']['id']
             tex = req['message']['text']
-            print('Recieved: \n', tex)
+            print('Recieved message: \n', tex)
 
             answer = botAnswer.bot_init(cid, tex)
             answer.send_message()

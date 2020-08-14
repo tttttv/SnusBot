@@ -8,9 +8,15 @@ def bot_answer(cid, mid, text):
     for req in requ:
         request[req.split('=')[0]] = req.split('=')[1]
 
-    textg = menuList.redirect(city = request['city'], menu= request['menu'])
+    print(request)
+    textb = menuList.redirect(city = request['City'], menu= request['Menu'])
 
-    #answer = api.NewMessage(text = ---, chat_id = cid, message_id= mid, buttons = )
+    #if textb[1]:
+    answer = api.NewMessage(**textb, chat_id = cid, message_id= mid)
+    #else:
+     #   print('sss')
+    #    answer = api.NewMessage(text = textb[0], chat_id = cid, message_id= mid)
+    return(answer)
 
 
 

@@ -1,7 +1,7 @@
 {
-  "update_id": 19041722,
-  "message": {
-    "message_id": 206,
+  "update_id": 19041853,
+  "callback_query": {
+    "id": "5061284718693735074",
     "from": {
       "id": 1178422178,
       "is_bot": false,
@@ -9,13 +9,46 @@
       "last_name": "Roquentin",
       "language_code": "en"
     },
-    "chat": {
-      "id": 1178422178,
-      "first_name": "Antoine",
-      "last_name": "Roquentin",
-      "type": "private"
+    "message": {
+      "message_id": 363,
+      "from": {
+        "id": 1289820254,
+        "is_bot": true,
+        "first_name": "TestBotPyTTTTTV",
+        "username": "tttttvbot"
+      },
+      "chat": {
+        "id": 1178422178,
+        "first_name": "Antoine",
+        "last_name": "Roquentin",
+        "type": "private"
+      },
+      "date": 1597438341,
+      "text": "Вы в меню помощи, выберите функцию:",
+      "reply_markup": {
+        "inline_keyboard": [
+          [
+            {
+              "text": "Перейти в магазн",
+              "callback_data": "City=NNO&Menu=Shop_Menu"
+            }
+          ],
+          [
+            {
+              "text": "Заказать звонок",
+              "callback_data": "City=NNO&Menu=Call"
+            }
+          ],
+          [
+            {
+              "text": "Изменить город",
+              "callback_data": "City=NNO&Menu=City_Change"
+            }
+          ]
+        ]
+      }
     },
-    "date": 1597429164,
-    "text": "st"
+    "chat_instance": "1148345713856990188",
+    "data": "City=NNO&Menu=Call"
   }
 }
