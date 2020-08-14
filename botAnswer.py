@@ -10,7 +10,7 @@ def bot_answer(cid, mid, text):
 
     textg = menuList.redirect(city = request['city'], menu= request['menu'])
 
-    answer = api.NewMessage(text = ---, chat_id = cid, message_id= mid, buttons = )
+    #answer = api.NewMessage(text = ---, chat_id = cid, message_id= mid, buttons = )
 
 
 
@@ -21,7 +21,7 @@ def bot_init(cid,text):
         cKeyboard = []
 
         for city in cList:
-            cbut = api.Inline_button(city, city_tag)
+            cbut = api.Inline_button(city, city_tag(city))
             cKeyboard.append(cbut)
 
         kb = api.Inline_keyboard(*cKeyboard)

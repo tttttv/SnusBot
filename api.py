@@ -16,9 +16,9 @@ class Inline_keyboard():
 
 
 class Inline_button():
-    def __init__(self, text, func):
+    def __init__(self, text, ans):
         self.text = text
-        self.callback = func(self.text)
+        self.callback = ans
 
     def generateRequest(self):
         return([{'text': self.text, 'callback_data': self.callback}])
