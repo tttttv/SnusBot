@@ -1,0 +1,54 @@
+{
+  "update_id": 19041718,
+  "callback_query": {
+    "id": "5061284719469729333",
+    "from": {
+      "id": 1178422178,
+      "is_bot": false,
+      "first_name": "Antoine",
+      "last_name": "Roquentin",
+      "language_code": "en"
+    },
+    "message": {
+      "message_id": 200,
+      "from": {
+        "id": 1289820254,
+        "is_bot": true,
+        "first_name": "TestBotPyTTTTTV",
+        "username": "tttttvbot"
+      },
+      "chat": {
+        "id": 1178422178,
+        "first_name": "Antoine",
+        "last_name": "Roquentin",
+        "type": "private"
+      },
+      "date": 1597427421,
+      "text": "Выберите город",
+      "reply_markup": {
+        "inline_keyboard": [
+          [
+            {
+              "text": "Нижний Новгород",
+              "callback_data": "City=NNO&Menu=Help_Menu"
+            }
+          ],
+          [
+            {
+              "text": "Москва",
+              "callback_data": "City=MSC&Menu=Help_Menu"
+            }
+          ],
+          [
+            {
+              "text": "Курган",
+              "callback_data": "City=KRG&Menu=Help_Menu"
+            }
+          ]
+        ]
+      }
+    },
+    "chat_instance": "1148345713856990188",
+    "data": "City=NNO&Menu=Help_Menu"
+  }
+}

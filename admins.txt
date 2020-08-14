@@ -1,1 +1,84 @@
 1178422178
+
+{
+  "NN": "Нижний Новгород",
+  "MSC": "Москва",
+  "KRG": "Курган"
+}
+
+
+
+
+
+{
+  "update_id": 19041649,
+  "callback_query": {
+    "id": "5061284716765334452",
+    "from": {
+      "id": 1178422178,
+      "is_bot": false,
+      "first_name": "Antoine",
+      "last_name": "Roquentin",
+      "language_code": "en"
+    },
+    "message": {
+      "message_id": 111,
+      "from": {
+        "id": 1289820254,
+        "is_bot": true,
+        "first_name": "TestBotPyTTTTTV",
+        "username": "tttttvbot"
+      },
+      "chat": {
+        "id": 1178422178,
+        "first_name": "Antoine",
+        "last_name": "Roquentin",
+        "type": "private"
+      },
+      "date": 1597406691,
+      "photo": [
+        {
+          "file_id": "AgACAgIAAxkDAANvXzZ944LESNFxFuwS182rk6OyAeQAAhyvMRtQnLFJiwIw35xXt74IQn2RLgADAQADAgADbQADH_gGAAEaBA",
+          "file_unique_id": "AQADCEJ9kS4AAx_4BgAB",
+          "file_size": 22754,
+          "width": 320,
+          "height": 243
+        },
+        {
+          "file_id": "AgACAgIAAxkDAANvXzZ944LESNFxFuwS182rk6OyAeQAAhyvMRtQnLFJiwIw35xXt74IQn2RLgADAQADAgADeAADIPgGAAEaBA",
+          "file_unique_id": "AQADCEJ9kS4AAyD4BgAB",
+          "file_size": 27988,
+          "width": 376,
+          "height": 286
+        }
+      ],
+      "caption": "Описание сообщения",
+      "reply_markup": {
+        "inline_keyboard": [
+          [
+            {
+              "text": "Первая",
+              "callback_data": "sendMessage?text=First"
+            }
+          ],
+          [
+            {
+              "text": "Вторая",
+              "callback_data": "sendMessage?text=Second"
+            }
+          ]
+        ]
+      }
+    },
+    "chat_instance": "1148345713856990188",
+    "data": "sendMessage?text=First"
+  }
+}
+
+
+
+
+
+
+
+
